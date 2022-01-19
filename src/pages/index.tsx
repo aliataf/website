@@ -1,8 +1,6 @@
 import * as React from 'react';
 
-import Layout from '@/components/layout/Layout';
 import ArrowLink from '@/components/links/ArrowLink';
-import ButtonLink from '@/components/links/ButtonLink';
 import UnderlineLink from '@/components/links/UnderlineLink';
 import UnstyledLink from '@/components/links/UnstyledLink';
 import Seo from '@/components/Seo';
@@ -16,18 +14,14 @@ import Seo from '@/components/Seo';
  */
 import Vercel from '~/svg/Vercel.svg';
 
-// !STARTERCONF -> Select !STARTERCONF and CMD + SHIFT + F
-// Before you begin editing, follow all comments with `STARTERCONF`,
-// to customize the default configuration.
-
 export default function HomePage() {
   return (
-    <Layout>
+    <>
       {/* <Seo templateTitle='Home' /> */}
       <Seo />
 
       <main>
-        <section className='bg-white'>
+        <section>
           <div className='layout flex flex-col justify-center items-center min-h-screen text-center'>
             <Vercel className='text-5xl' />
             <h1 className='mt-4'>
@@ -42,10 +36,6 @@ export default function HomePage() {
                 See the repository
               </ArrowLink>
             </p>
-
-            <ButtonLink className='mt-6' href='/components' variant='light'>
-              See all components
-            </ButtonLink>
 
             <UnstyledLink
               href='https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Ftheodorusclarence%2Fts-nextjs-tailwind-starter'
@@ -69,6 +59,6 @@ export default function HomePage() {
           </div>
         </section>
       </main>
-    </Layout>
+    </>
   );
 }
