@@ -5,6 +5,8 @@
 :root {
   /* #region  /**=========== Primary Color =========== */
   --color-primary: #0e0c38;
+  --color-primary-light: #0f1240;
+  --color-secondary: #ffaa00;
   /* #endregion  /**======== Primary Color =========== */
 }
 
@@ -91,4 +93,9 @@
   .animated-underline:focus-visible {
     background-size: 0 2px, 100% 2px;
   }
+}
+
+body,
+html {
+  @apply overflow-x-hidden p-0 m-0 w-screen h-screen;
 }

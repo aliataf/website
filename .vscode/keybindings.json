@@ -1,0 +1,132 @@
+[
+  {
+    "key": "a",
+    "command": "^editor.action.triggerSuggest",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "b",
+    "command": "^editor.action.triggerSuggest",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "c",
+    "command": "^editor.action.triggerSuggest",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "d",
+    "command": "^editor.action.triggerSuggest",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "e",
+    "command": "^editor.action.triggerSuggest",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "f",
+    "command": "^editor.action.triggerSuggest",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "g",
+    "command": "^editor.action.triggerSuggest",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "h",
+    "command": "^editor.action.triggerSuggest",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "i",
+    "command": "^editor.action.triggerSuggest",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "j",
+    "command": "^editor.action.triggerSuggest",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "k",
+    "command": "^editor.action.triggerSuggest",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "l",
+    "command": "^editor.action.triggerSuggest",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "m",
+    "command": "^editor.action.triggerSuggest",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "n",
+    "command": "^editor.action.triggerSuggest",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "o",
+    "command": "^editor.action.triggerSuggest",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "p",
+    "command": "^editor.action.triggerSuggest",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "q",
+    "command": "^editor.action.triggerSuggest",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "r",
+    "command": "^editor.action.triggerSuggest",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "s",
+    "command": "^editor.action.triggerSuggest",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "t",
+    "command": "^editor.action.triggerSuggest",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "u",
+    "command": "^editor.action.triggerSuggest",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "v",
+    "command": "^editor.action.triggerSuggest",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "w",
+    "command": "^editor.action.triggerSuggest",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "x",
+    "command": "^editor.action.triggerSuggest",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "y",
+    "command": "^editor.action.triggerSuggest",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "z",
+    "command": "^editor.action.triggerSuggest",
+    "when": "editorTextFocus"
+  }
+]

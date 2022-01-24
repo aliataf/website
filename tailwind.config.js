@@ -19,7 +19,11 @@ module.exports = {
         primary: ['Inter', ...fontFamily.sans],
       },
       colors: {
-        primary: 'var(--color-primary)',
+        primary: {
+          DEFAULT: 'var(--color-primary)',
+          light: 'var(--color-primary-light)',
+        },
+        secondart: 'var(--color-secondary)',
         dark: '#222222',
       },
       keyframes: {
