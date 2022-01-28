@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.2](https://github.com/aliataf/website/compare/v0.2.1...v0.2.2) (2022-01-28)
+
+
+### Features
+
+* add viewport hook ([ad5706f](https://github.com/aliataf/website/commit/ad5706f3bbd09084e42c554ff46be589e3ee6c6c))
+
+
+### Bug Fixes
+
+* disable no-console rule in eslint ([8dae7f9](https://github.com/aliataf/website/commit/8dae7f92dea0c4b4409cb5f86a25f8707878d12e))
+* run prettier on index.tsx ([36a98ef](https://github.com/aliataf/website/commit/36a98efce970cfd0df989a2889bb0f71f239a014))
+
 ### 0.2.1 (2022-01-25)
 
 
