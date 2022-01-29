@@ -3,6 +3,7 @@ import * as React from 'react';
 
 import { useViewport } from '@/hooks/viewport';
 
+import BgCircle from '@/components/layout/BgCircle';
 import Seo from '@/components/Seo';
 
 import profilePic from '@/assets/me.png';
@@ -38,16 +39,14 @@ export default function HomePage() {
           >
             <Image src={profilePic} alt='Profile picture' />
           </div>
-          <div className='relative w-96 h-96'>
-            <div className='bg-primary-light flex absolute -left-12 flex-col justify-center pl-28 w-96 h-96 rounded-full'>
-              <div className='text-2xl font-light'>Hello, I am</div>
-              <div className='text-8xl font-extrabold'>Ali</div>
-              <div className='text-8xl font-extrabold'>Ataf</div>
-              <div className='tracking-[5px] z-50 sm:tracking-[15px]'>
-                <span className='whitespace-nowrap'>Frontend Developer</span>
-              </div>
+          <BgCircle>
+            <div className='text-2xl font-light'>Hello, I am</div>
+            <div className='text-8xl font-extrabold'>Ali</div>
+            <div className='text-8xl font-extrabold'>Ataf</div>
+            <div className='tracking-[5px] z-50 sm:tracking-[15px]'>
+              <span className='whitespace-nowrap'>Frontend Developer</span>
             </div>
-          </div>
+          </BgCircle>
         </div>
       </section>
     </>
