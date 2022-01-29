@@ -11,7 +11,7 @@ const links = [
 
 export default function Header() {
   return (
-    <header className='sticky top-0 z-50'>
+    <header className='bg-primary sticky top-0 z-50 drop-shadow-lg'>
       <div className='layout flex justify-between items-center h-14'>
         <UnstyledLink href='/' className='font-bold'>
           &lt;Ali Ataf /&gt;
