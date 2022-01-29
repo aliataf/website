@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import * as React from 'react';
 
-import { useViewport } from '@/hooks/viewport';
+import { ViewportContext } from '@/hooks/viewport';
 
 import BgCircle from '@/components/layout/BgCircle';
 import Seo from '@/components/Seo';
@@ -17,38 +17,40 @@ import profilePic from '@/assets/me.png';
  */
 
 export default function HomePage() {
-  const { width } = useViewport();
-  const isTabletOrBigger = width >= 768;
-
   return (
-    <>
-      {/* <Seo templateTitle='Home' /> */}
-      <Seo />
+    <ViewportContext.Consumer>
+      {({ isTabletOrBigger }) => (
+        <>
+          <Seo templateTitle='Home' />
 
-      <section>
-        <div
-          className={`min-w-screen flex ${
-            isTabletOrBigger ? 'flex-row-reverse justify-between' : 'flex-col'
-          } items-center min-h-screen`}
-        >
-          <div>s</div>
-          <div
-            className={`h-7/12 ${
-              isTabletOrBigger ? 'w-5/12 -translate-y-11' : 'w-11/12'
-            }`}
-          >
-            <Image src={profilePic} alt='Profile picture' />
-          </div>
-          <BgCircle>
-            <div className='text-2xl font-light'>Hello, I am</div>
-            <div className='text-8xl font-extrabold'>Ali</div>
-            <div className='text-8xl font-extrabold'>Ataf</div>
-            <div className='tracking-[5px] z-50 sm:tracking-[15px]'>
-              <span className='whitespace-nowrap'>Frontend Developer</span>
+          <section>
+            <div
+              className={`min-w-screen flex ${
+                isTabletOrBigger
+                  ? 'flex-row-reverse justify-between'
+                  : 'flex-col'
+              } items-center min-h-screen`}
+            >
+              <div>s</div>
+              <div
+                className={`h-7/12 ${
+                  isTabletOrBigger ? 'w-5/12 -translate-y-11' : 'w-11/12'
+                }`}
+              >
+                <Image src={profilePic} alt='Profile picture' />
+              </div>
+              <BgCircle>
+                <div className='text-2xl font-light'>Hello, I am</div>
+                <div className='text-8xl font-extrabold'>Ali</div>
+                <div className='text-8xl font-extrabold'>Ataf</div>
+                <div className='tracking-[5px] z-50 sm:tracking-[15px]'>
+                  <span className='whitespace-nowrap'>Frontend Developer</span>
+                </div>
+              </BgCircle>
             </div>
-          </BgCircle>
-        </div>
-      </section>
-    </>
+          </section>
+        </>
+      )}
+    </ViewportContext.Consumer>
   );
 }
