@@ -34,6 +34,9 @@ function ViewportProvider({ children }: Props) {
   React.useEffect(() => {
     if (typeof window !== undefined) {
       window.addEventListener('resize', handleWindowResize);
+      setWidth(window.innerWidth);
+      setHeight(window.innerHeight);
+      setIsTabletOrBigger(window.innerWidth >= 768);
     }
     isMounted.current = true;
     return () => {
