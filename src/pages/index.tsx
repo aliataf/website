@@ -1,3 +1,4 @@
+import { Blog, PrismaClient } from '@prisma/client';
 import Image from 'next/image';
 import * as React from 'react';
 
@@ -16,7 +17,22 @@ import profilePic from '@/assets/me.png';
  * @see https://stackoverflow.com/questions/68103844/how-to-override-next-js-svg-module-declaration
  */
 
-export default function HomePage() {
+type HomeProps = {
+  blogs: Blog[];
+};
+
+export async function getStaticProps() {
+  const prisma = new PrismaClient();
+  const blogs: Blog[] = await prisma.blog.findMany();
+
+  return {
+    props: {
+      blogs,
+    },
+  };
+}
+
+export default function HomePage({ blogs }: HomeProps) {
   const { width } = useViewport();
   const isTabletOrBigger = width >= 768;
 
@@ -24,6 +40,8 @@ export default function HomePage() {
     <>
       {/* <Seo templateTitle='Home' /> */}
       <Seo />
+
+      <div>{blogs[0].content}</div>
 
       <section>
         <div
