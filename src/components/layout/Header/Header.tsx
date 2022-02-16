@@ -1,5 +1,7 @@
 import * as React from 'react';
 
+import headerStyles from './Header.module.css';
+
 import UnstyledLink from '@/components/links/UnstyledLink';
 
 const links = [
@@ -12,18 +14,18 @@ const links = [
 export default function Header() {
   return (
     <header className='bg-primary sticky top-0 z-50 drop-shadow-lg'>
-      <div className='layout flex justify-between items-center h-14'>
+      <div className='layout flex justify-between items-center pb-1 h-16'>
         <UnstyledLink href='/' className='font-bold'>
           &lt;Ali Ataf /&gt;
         </UnstyledLink>
         <nav>
-          <ul className='flex justify-between items-center space-x-5'>
+          <ul className='flex justify-between items-center space-x-5 h-16'>
             {links.map(({ href, label }) => (
-              <li key={`${href}${label}`} className='hover:bg-orange-400'>
-                <UnstyledLink href={href} className='hover:text-purple-300'>
+              <UnstyledLink href={href} key={`${href}${label}`}>
+                <li className={headerStyles.navItem} data-label={label}>
                   {label}
-                </UnstyledLink>
-              </li>
+                </li>
+              </UnstyledLink>
             ))}
           </ul>
         </nav>

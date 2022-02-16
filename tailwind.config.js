@@ -25,6 +25,7 @@ module.exports = {
         },
         secondary: 'var(--color-secondary)',
         accent: 'var(--color-accent)',
+        action: 'var(--color-action)',
         dark: '#222222',
       },
       keyframes: {
