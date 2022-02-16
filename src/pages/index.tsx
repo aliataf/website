@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import * as React from 'react';
 
@@ -32,14 +33,17 @@ export default function HomePage() {
               } items-center min-h-screen`}
             >
               <div></div>
-              <div
+              <motion.div
                 className={`h-7/12 ${
                   isTabletOrBigger ? 'w-5/12 -translate-y-11' : 'w-11/12'
                 }`}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.8 }}
               >
                 <Image src={profilePic} alt='Profile picture' />
-              </div>
-              <BgCircle>
+              </motion.div>
+              <BgCircle animate>
                 <div className='text-2xl font-light'>Hello, I am</div>
                 <div className='text-8xl font-extrabold'>Ali</div>
                 <div className='text-8xl font-extrabold'>Ataf</div>

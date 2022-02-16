@@ -23,7 +23,8 @@ module.exports = {
           DEFAULT: 'var(--color-primary)',
           light: 'var(--color-primary-light)',
         },
-        secondart: 'var(--color-secondary)',
+        secondary: 'var(--color-secondary)',
+        accent: 'var(--color-accent)',
         dark: '#222222',
       },
       keyframes: {

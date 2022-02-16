@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { GetStaticProps, GetStaticPropsContext } from 'next';
 
+import Button from '@/components/buttons/Button';
 import BgCircle from '@/components/layout/BgCircle';
 import Seo from '@/components/Seo';
 
@@ -23,9 +24,9 @@ export default function HomePage({ title }: Props) {
     <>
       <Seo templateTitle='About' />
 
-      <section>
+      <section className='bg-secondary'>
         <div className='flex justify-between min-h-screen'>
-          <BgCircle width='45vw' height='45vw' animate />
+          <BgCircle width='45vw' height='45vw' animate doubleBorder />
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -58,6 +59,18 @@ export default function HomePage({ title }: Props) {
                 Nestech
               </a>
               .
+            </div>
+
+            <div className='mt-16'>
+              <Button className='px-6 py-4 rounded-full hover:bg-accent'>
+                <a
+                  href='/resume/Ali_Ataf_Resume.pdf'
+                  download='Ali_Ataf_Resume.pdf'
+                  target='_blank'
+                >
+                  My Resume
+                </a>
+              </Button>
             </div>
           </motion.div>
         </div>
