@@ -31,7 +31,7 @@ export default function HomePage() {
                   : 'flex-col'
               } items-center min-h-screen`}
             >
-              <div>s</div>
+              <div></div>
               <div
                 className={`h-7/12 ${
                   isTabletOrBigger ? 'w-5/12 -translate-y-11' : 'w-11/12'
