@@ -46,7 +46,7 @@ export default function Projects({ projects }: ProjectsProps) {
                 transition={{ duration: 0.5 }}
               />
             </div>
-            <div className='flex gap-x-6 pb-4 mt-16 text-gray-300'>
+            <div className='flex flex-wrap pb-4 mt-16 text-gray-300'>
               {projects &&
                 projects.map((project: ProjectWithPhoto) => (
                   <ProjectCard key={project.id} project={project} />
