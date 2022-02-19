@@ -19,10 +19,18 @@ model Blog {
   photo String
 }
 
+model Photo {
+  id Int @default(autoincrement()) @id
+  url String
+  alt String
+  project Project? @relation(fields: [projectId], references: [id])
+  projectId Int
+}
+
 model Project {
   id Int @default(autoincrement()) @id
   title String
   content String
-  date String
-  minutes Int
+  url String?
+  photo Photo?
 }
