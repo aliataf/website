@@ -31,7 +31,7 @@ export default function Header() {
               alt={label}
               width='35px'
               height='35px'
-              className='cursor-pointer hover:text-white'
+              className='cursor-pointer hover:scale-105'
             />
           </div>
         </UnstyledLink>
