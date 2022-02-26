@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+	--color-primary: #0e0c38;
+	--color-primary-light: #0f1240;
+	--color-secondary: #040121;
+	--color-accent: #07092d;
+	--color-action: #ffaa00;
+}
+
+@layer base {
+	.cursor-newtab {
+		cursor: url('/images/new-tab.png') 10 10, pointer;
+	}
+
+	body,
+	.p {
+		@apply text-sm md:text-base;
+	}
+
+	.layout {
+		/* 1100px */
+		max-width: 68.75rem;
+		@apply mx-auto w-11/12;
+	}
+
+	.bg-dark a.custom-link {
+		@apply border-gray-200 hover:border-gray-200/0;
+	}
+}
+
+body,
+html {
+	@apply overflow-x-hidden p-0 m-0 w-screen h-screen;
+}
