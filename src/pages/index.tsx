@@ -51,7 +51,7 @@ export default function Home({ myPhoto }: HomeProps) {
 									unoptimized
 								/>
 							</div>
-							<BgCircle animate>
+							<BgCircle>
 								<div className="text-2xl font-light">Hello, I am</div>
 								<div className="text-8xl font-extrabold">Ali</div>
 								<div className="text-8xl font-extrabold">Ataf</div>

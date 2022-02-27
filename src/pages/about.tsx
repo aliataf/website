@@ -15,7 +15,7 @@ export default function HomePage() {
 
 			<section className="bg-secondary">
 				<div className="block justify-between min-h-screen sm:flex">
-					<BgCircle width="45vw" height="45vw" animate doubleBorder />
+					<BgCircle width="45vw" height="45vw" doubleBorder />
 					<div className="flex-1 p-4 sm:pt-32">
 						<div className="flex items-center mt-6">
 							<div className="pr-6 text-3xl">About Me</div>
