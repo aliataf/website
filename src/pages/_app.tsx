@@ -7,13 +7,13 @@ import { ViewportProvider } from '@/hooks/viewport';
 import Layout from '@/components/layout/Layout';
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return (
-    <ViewportProvider>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-    </ViewportProvider>
-  );
+	return (
+		<ViewportProvider>
+			<Layout>
+				<Component {...pageProps} />
+			</Layout>
+		</ViewportProvider>
+	);
 }
 
 export default MyApp;
