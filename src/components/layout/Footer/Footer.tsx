@@ -4,6 +4,7 @@ import * as React from 'react';
 import UnstyledLink from '@/components/links/UnstyledLink';
 
 const socials = [
+	{ href: 'mailto:aliattaf98@gmail.com', label: 'Email' },
 	{ href: 'https://www.github.com/aliataf', label: 'Github' },
 	{ href: 'https://www.linkedin.com/in/ali-ataf', label: 'Linkedin' },
 	{
@@ -18,7 +19,7 @@ const socials = [
 
 export default function Header() {
 	return (
-		<footer className="bg-primary flex gap-x-1 items-center p-6">
+		<footer className="bg-primary flex gap-x-1 items-center px-3 pt-1 fixed bottom-0">
 			{socials.map(({ href, label }) => (
 				<UnstyledLink href={href} key={`${href}${label}`} className="text-white">
 					<div className="text-red" style={{ color: 'red', fill: 'green' }}>
