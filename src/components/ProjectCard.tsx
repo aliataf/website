@@ -20,7 +20,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 	}
 
 	return (
-		<div className="w-12/12 p-4 sm:w-6/12 md:w-4/12">
+		<div className="w-12/12 sm:p-4 mt-4 sm:mt-0 sm:w-6/12 md:w-4/12">
 			<div className="bg-accent flex-col pt-4 rounded-xl transition-all dark:bg-slate-800 hover:scale-105">
 				{project.photo && (
 					<div className="flex justify-center">

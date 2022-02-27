@@ -26,7 +26,7 @@ export default function Projects({ projects }: ProjectsProps) {
 		<>
 			<Seo templateTitle="Projects" />
 
-			<section className="bg-secondary px-16">
+			<section className="bg-secondary px-8 sm:px-16">
 				<div className="flex justify-between min-h-screen">
 					<div className="flex-1 pt-32">
 						<div className="flex items-center">
