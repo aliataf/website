@@ -28,12 +28,12 @@ export default function Projects({ projects }: ProjectsProps) {
 
 			<section className="bg-secondary px-8 sm:px-16">
 				<div className="flex justify-between min-h-screen">
-					<div className="flex-1 pt-32">
+					<div className="flex-1 pt-16">
 						<div className="flex items-center">
 							<div className="pr-6 text-3xl">Projects</div>
 							<div className="flex-1 border border-yellow-400" style={{ height: '1px' }} />
 						</div>
-						<div className="flex flex-wrap pb-4 mt-16 text-gray-300">
+						<div className="flex flex-wrap pb-4 mt-8 text-gray-300">
 							{projects &&
 								projects.map((project: ProjectWithPhoto) => (
 									<ProjectCard key={project.id} project={project} />
