@@ -19,7 +19,7 @@ const socials = [
 
 export default function Header() {
 	return (
-		<footer className="bg-primary flex gap-x-1 items-center px-3 pt-1 fixed bottom-0">
+		<footer className="bg-accent flex gap-x-1 items-center px-3 pt-2 sticky bottom-0">
 			{socials.map(({ href, label }) => (
 				<UnstyledLink href={href} key={`${href}${label}`} className="text-white">
 					<div className="text-red" style={{ color: 'red', fill: 'green' }}>
