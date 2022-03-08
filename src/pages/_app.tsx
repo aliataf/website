@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 		<ViewportProvider>
 			<Script
 				src="https://www.googletagmanager.com/gtag/js?id=G-91BH0596YL"
-				strategy="afterInteractive"
+				strategy="lazyOnload"
 			/>
 			<Script id="google-analytics" strategy="afterInteractive">
 				{`
