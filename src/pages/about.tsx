@@ -27,13 +27,13 @@ export default function HomePage() {
 							<div className="mt-6 leading-10 text-gray-300 sm:pr-16 sm:mt-4">
 								I am a Software Engineer with over 2 years of experience in web development.
 								I have a passion for building scalable and maintainable web applications. I
-								am currently working as a Frontend Developer at{' '}
+								am currently working as a Frontend Engineer at{' '}
 								<a
-									href="https://www.nestech.org/"
+									href="https://supy.io/"
 									target="_blank"
 									rel="noopener noreferrer"
 									className="text-yellow-400 transition-all duration-700 ease-in-out hover:underline">
-									Nestech
+									Supy
 								</a>
 								.
 								<br />
@@ -47,17 +47,6 @@ export default function HomePage() {
 									{' '}
 									React, Next.js, Vue.js, Typescript, Tailwindcss and Sass.
 								</span>
-							</div>
-
-							<div className="my-8">
-								<Button className="px-6 py-4 rounded-full hover:bg-accent">
-									<a
-										href="/resume/Ali_Ataf_Resume.pdf"
-										download="Ali_Ataf_Resume.pdf"
-										target="_blank">
-										My Resume
-									</a>
-								</Button>
 							</div>
 						</div>
 					</div>

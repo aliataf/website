@@ -6,6 +6,7 @@ import { ViewportContext } from '@/hooks/viewport';
 
 import BgCircle from '@/components/layout/BgCircle';
 import Seo from '@/components/Seo';
+import Button from '@/components/buttons/Button';
 
 type HomeProps = {
 	myPhoto: Photo;
@@ -57,6 +58,16 @@ export default function Home({ myPhoto }: HomeProps) {
 								<div className="text-8xl font-extrabold">Ataf</div>
 								<div className="tracking-[5px] z-50 sm:tracking-[15px]">
 									<span className="whitespace-nowrap">Frontend Developer</span>
+								</div>
+								<div className="mt-3">
+									<Button className="px-3 py-1 rounded-full hover:bg-accent">
+										<a
+											href="/resume/Ali_Ataf_Resume.pdf"
+											download="Ali_Ataf_Resume.pdf"
+											target="_blank">
+											My Resume
+										</a>
+									</Button>
 								</div>
 							</BgCircle>
 						</div>
