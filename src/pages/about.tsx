@@ -25,7 +25,7 @@ export default function HomePage() {
 									style={{ height: '1px' }}></div>
 							</div>
 							<div className="mt-6 leading-10 text-gray-300 sm:pr-16 sm:mt-4">
-								I am a Software Engineer with over 2 years of experience in web development.
+								I am a Software Engineer with over 3 years of experience in web development.
 								I have a passion for building scalable and maintainable web applications. I
 								am currently working as a Frontend Engineer at{' '}
 								<a
@@ -45,7 +45,7 @@ export default function HomePage() {
 								have been working with technologies like{' '}
 								<span className="font-bold">
 									{' '}
-									React, Next.js, Vue.js, Typescript, Tailwindcss and Sass.
+									Angular, React, Next.js, Vue.js, Typescript, Tailwindcss and Sass.
 								</span>
 							</div>
 						</div>

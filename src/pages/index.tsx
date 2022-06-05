@@ -57,7 +57,7 @@ export default function Home({ myPhoto }: HomeProps) {
 								<div className="text-8xl font-extrabold">Ali</div>
 								<div className="text-8xl font-extrabold">Ataf</div>
 								<div className="tracking-[5px] z-50 sm:tracking-[15px]">
-									<span className="whitespace-nowrap">Frontend Developer</span>
+									<span className="whitespace-nowrap">Frontend Engineer</span>
 								</div>
 								<div className="mt-3">
 									<Button className="px-3 py-1 rounded-full hover:bg-accent">
