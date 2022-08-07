@@ -31,7 +31,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 							height="150px"
 							className="cursor-zoom-in rounded-xl"
 							onClick={() => onPhotoClick(project.photo)}
-							unoptimized
+							placeholder="blur"
 						/>
 					</div>
 				)}

@@ -44,7 +44,7 @@ export default function Home({ myPhoto }: HomeProps) {
 								className={`h-7/12 ${
 									isTabletOrBigger ? 'w-5/12 -translate-y-11' : 'w-11/12'
 								}`}>
-								<Image src={myPhoto.url} alt={myPhoto.alt} width="500px" height="500px" />
+								<Image src={myPhoto.url} alt={myPhoto.alt} width="500px" height="500px" placeholder="blur" />
 							</div>
 							<BgCircle>
 								<div className="text-2xl font-light">Hello, I am</div>
