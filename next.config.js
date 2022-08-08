@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 	reactStrictMode: true,
-	assetPrefix: '.',
+	basePath: '/website',
 	images: {
 		loader: 'imgix',
 		path: 'https://noop/',
