@@ -24,7 +24,7 @@ export default function Header() {
 				<UnstyledLink href={href} key={`${href}${label}`} className="text-white">
 					<div className="text-red" style={{ color: 'red', fill: 'green' }}>
 						<Image
-							src={`/icons/${label.toLowerCase()}.svg`}
+							src={`icons/${label.toLowerCase()}.svg`}
 							alt={label}
 							width="35px"
 							height="35px"
