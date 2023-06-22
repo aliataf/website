@@ -25,7 +25,7 @@ export default function HomePage() {
 									style={{ height: '1px' }}></div>
 							</div>
 							<div className="mt-6 leading-10 text-gray-300 sm:pr-16 sm:mt-4">
-								I am a Software Engineer with over 3 years of experience in web development.
+								I am a Software Engineer with over 4 years of experience in web development.
 								I have a passion for building scalable and maintainable web applications. I
 								am currently working as a Frontend Engineer at{' '}
 								<a
@@ -39,7 +39,7 @@ export default function HomePage() {
 								<br />
 								Actually, I started to code in 2012 (14 years old), with Visual Basic 6.0
 								and I built a lot of programs and games in it(Unfortunately, I didn&apos;t
-								upload them on any public repository 😢).
+								upload them to any public repository 😢).
 								<br />
 								Then, I started to learn JavaScript and I have been using it since then. I
 								have been working with technologies like{' '}
