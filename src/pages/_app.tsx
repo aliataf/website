@@ -1,10 +1,10 @@
 import { AppProps } from 'next/app';
 import Script from 'next/script';
+import {Analytics} from '@vercel/analytics/react'
 
 import '@/styles/globals.css';
 
 import { ViewportProvider } from '@/hooks/viewport';
-
 import Layout from '@/components/layout/Layout';
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -26,6 +26,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 			<Layout>
 				<Component {...pageProps} />
 			</Layout>
+			<Analytics />
 		</ViewportProvider>
 	);
 }
