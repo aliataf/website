@@ -44,14 +44,14 @@ export default function Home({ myPhoto }: HomeProps) {
 								className={`h-7/12 ${
 									isTabletOrBigger ? 'w-5/12 -translate-y-11' : 'w-11/12'
 								}`}>
-								<Image src={myPhoto.url} alt={myPhoto.alt} width="500px" height="500px" placeholder="blur" />
+								<Image src={myPhoto.url} alt={myPhoto.alt} width="500px" height="500px" />
 							</div>
 							<BgCircle>
 								<div className="text-2xl font-light">Hello, I am</div>
 								<div className="text-8xl font-extrabold">Ali</div>
 								<div className="text-8xl font-extrabold">Ataf</div>
 								<div className="tracking-[5px] z-50 sm:tracking-[15px]">
-									<span className="whitespace-nowrap">Frontend Engineer</span>
+									<span className="whitespace-nowrap">Software Engineer</span>
 								</div>
 								<div className="mt-3">
 									<Button className="px-3 py-1 rounded-full hover:bg-accent">

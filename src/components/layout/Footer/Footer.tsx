@@ -29,7 +29,6 @@ export default function Header() {
 							width="35px"
 							height="35px"
 							className="cursor-pointer hover:scale-105"
-							placeholder="blur"
 							unoptimized={true}
 						/>
 					</div>

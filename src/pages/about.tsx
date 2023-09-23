@@ -27,7 +27,7 @@ export default function HomePage() {
 							<div className="mt-6 leading-10 text-gray-300 sm:pr-16 sm:mt-4">
 								I am a Software Engineer with over 4 years of experience in web development.
 								I have a passion for building scalable and maintainable web applications. I
-								am currently working as a Frontend Engineer at{' '}
+								am currently working as a Software Engineer at{' '}
 								<a
 									href="https://supy.io/"
 									target="_blank"
