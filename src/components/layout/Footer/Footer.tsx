@@ -4,7 +4,7 @@ import * as React from 'react';
 import UnstyledLink from '@/components/links/UnstyledLink';
 
 const socials = [
-	{ href: 'mailto:aliattaf98@gmail.com', label: 'Email' },
+	{ href: 'mailto:ali@aliataf.com', label: 'Email' },
 	{ href: 'https://www.github.com/aliataf', label: 'Github' },
 	{ href: 'https://www.linkedin.com/in/ali-ataf', label: 'Linkedin' },
 	{
