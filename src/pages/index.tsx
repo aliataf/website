@@ -56,9 +56,10 @@ export default function Home({ myPhoto }: HomeProps) {
 								<div className="mt-3">
 									<Button className="px-3 py-1 rounded-full hover:bg-accent">
 										<a
-											href="resume/Ali_Ataf_Resume.pdf"
-											download="Ali_Ataf_Resume.pdf"
-											target="_blank">
+											rel="noopener noreferrer"
+											href="https://aliataf.github.io/resume/Ali_Ataf_Resume.pdf"
+											target="_blank"
+											download="Ali_Ataf_Resume.pdf">
 											My Resume
 										</a>
 									</Button>
