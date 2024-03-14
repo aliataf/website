@@ -34,11 +34,11 @@ export default function Home({ myPhoto }: HomeProps) {
 				<>
 					<Seo templateTitle="Home" />
 
-					<section>
+					<section className="h-full">
 						<div
-							className={`min-w-screen flex ${
+							className={`h-full min-w-screen flex ${
 								isTabletOrBigger ? 'flex-row-reverse justify-between' : 'flex-col'
-							} items-center min-h-screen`}>
+							} items-center`}>
 							<div></div>
 							<div
 								className={`h-7/12 ${

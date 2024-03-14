@@ -6,9 +6,9 @@ import Header from '@/components/layout/Header/Header';
 export default function Layout({ children }: { children: React.ReactNode }) {
 	// Put Header or Footer Here
 	return (
-		<div className="bg-primary text-white">
+		<div className="bg-primary text-white flex flex-col h-full">
 			<Header />
-			<main>{children}</main>
+			<main className="flex-1">{children}</main>
 			<Footer />
 		</div>
 	);
