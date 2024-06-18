@@ -10,5 +10,4 @@ const prettierCommand = (filenames) =>
 
 module.exports = {
   '*.{js,jsx,ts,tsx}': [eslintCommand, prettierCommand],
-  '!(*.js|*.jsx|*.ts|*.tsx)': [prettierCommand],
 };
