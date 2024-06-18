@@ -1,8 +1,8 @@
-import { PrismaClient } from "@prisma/client";
+import { PrismaClient } from '@prisma/client';
 
 let prisma: PrismaClient;
 
-if (process.env.NODE_ENV === "production") {
+if (process.env.NODE_ENV === 'production') {
   // In production mode, it's best to not use a global variable
   prisma = new PrismaClient();
 } else {
