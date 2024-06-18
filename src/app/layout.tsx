@@ -6,7 +6,11 @@ import { Analytics } from '@vercel/analytics/react';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Ali Ataf',
+  metadataBase: new URL('https://aliataf.com'),
+  title: {
+    default: 'Ali Ataf',
+    template: '%s | Ali Ataf',
+  },
   description: "Ali Ataf's website",
   publisher: 'Ali Ataf',
   creator: 'Ali Ataf',

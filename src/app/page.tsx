@@ -1,4 +1,9 @@
-import { prisma } from '~/lib';
+import { prisma } from '@/lib';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Ali Ataf',
+};
 
 export default async function Home() {
   const projects = await prisma.project.findMany();
