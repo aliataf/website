@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default async function Home() {
   return (
     <main>
-      <Image src={personalImg} alt="My personal photo" unoptimized />
+      <Image src={personalImg} alt="My personal photo" unoptimized priority />
     </main>
   );
 }
