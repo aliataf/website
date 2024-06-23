@@ -1,20 +1,15 @@
-import { prisma } from '@/lib';
 import { Metadata } from 'next';
+import Image from 'next/image';
+import personalImg from '@/assets/images/personal.webp';
 
 export const metadata: Metadata = {
   title: 'Ali Ataf',
 };
 
 export default async function Home() {
-  const projects = await prisma.project.findMany();
-
   return (
     <main>
-      <ul>
-        {projects.map((project) => (
-          <li key={project.id}>{project.title}</li>
-        ))}
-      </ul>
+      <Image src={personalImg} alt="My personal photo" unoptimized />
     </main>
   );
 }
