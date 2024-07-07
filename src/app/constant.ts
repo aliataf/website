@@ -1,6 +1,7 @@
+import { NavItem } from '@/components';
 import { Metadata } from 'next';
 
-export const customMetadata: Metadata = {
+export const rootLayoutMetadata: Metadata = {
   metadataBase: new URL('https://aliataf.com'),
   title: {
     default: 'Ali Ataf',
@@ -29,3 +30,8 @@ export const customMetadata: Metadata = {
   robots: 'index, follow',
   authors: { name: 'Ali Ataf', url: 'https://aliataf.com' },
 };
+
+export const navItems: NavItem[] = [
+  { label: 'About', href: '/about' },
+  { label: 'Projects', href: '/projects' },
+];

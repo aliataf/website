@@ -1,0 +1,18 @@
+.link {
+	@apply inline-block relative px-3 pt-6 pb-11 w-20 h-1 text-center rounded-b-full sm:w-20 dark:text-white;
+}
+
+.link::after {
+	content: '';
+	transition: all 0.3s;
+	@apply bg-action absolute top-0 left-0 py-1 w-full h-0 text-center rounded-b-full cursor-pointer text-white;
+}
+
+.link:not(.active):hover::after {
+	content: attr(data-label);
+	@apply pt-6 pb-11 h-full;
+}
+
+.active {
+	@apply bg-action;
+}
