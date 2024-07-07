@@ -15,9 +15,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-primary`}>
+      <body className={`${inter.className} bg-primary h-screen flex flex-col justify-between`}>
         <Header items={navItems} />
-        {children}
+        <div className="flex-1">{children}</div>
         <Analytics />
       </body>
     </html>

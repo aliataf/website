@@ -9,3 +9,7 @@
 	--color-accent: #07092d;
 	--color-action: #ffaa00;
 }
+
+body {
+	@apply text-white;
+}
