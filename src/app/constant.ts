@@ -1,4 +1,3 @@
-import { NavItem } from '@/components';
 import { Metadata } from 'next';
 
 export const rootLayoutMetadata: Metadata = {
@@ -30,8 +29,3 @@ export const rootLayoutMetadata: Metadata = {
   robots: 'index, follow',
   authors: { name: 'Ali Ataf', url: 'https://aliataf.com' },
 };
-
-export const navItems: NavItem[] = [
-  { label: 'About', href: '/about' },
-  { label: 'Projects', href: '/projects' },
-];

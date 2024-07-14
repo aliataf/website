@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default async function Home() {
   return (
-    <main className="h-full flex flex-col md:flex-row items-center md:gap-40 p-10 md:p-20">
+    <main className="h-full flex flex-col md:flex-row items-center md:gap-40">
       <BgCircle className="flex flex-col gap-2">
         <p className="md:text-2xl font-light">Hey 👋, I am</p>
         <p className="text-2xl md:text-8xl font-extrabold">Ali</p>
