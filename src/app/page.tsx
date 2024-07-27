@@ -16,7 +16,7 @@ export default async function Home() {
         <p className="text-2xl md:text-8xl font-extrabold">Ataf</p>
         <p className="md:tracking-[5px] whitespace-nowrap">Senior Frontend Engineer</p>
       </BgCircle>
-      <Image src={personalImg} alt="My personal photo" unoptimized priority />
+      <Image src={personalImg} alt="My personal photo" priority />
     </main>
   );
 }

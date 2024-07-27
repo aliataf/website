@@ -9,7 +9,7 @@ import facebookIcon from '@/assets/icons/facebook.svg';
 import whatsappIcon from '@/assets/icons/whatsapp.svg';
 import Link from 'next/link';
 
-const socials = [
+const footerItems = [
   { href: 'mailto:ali@aliataf.com', alt: 'Email', src: emailIcon },
   { href: 'https://www.github.com/aliataf', alt: 'Github', src: githubIcon },
   { href: 'https://www.linkedin.com/in/ali-ataf', alt: 'Linkedin', src: linkedinIcon },
@@ -27,7 +27,7 @@ const socials = [
 export function Footer() {
   return (
     <footer className="bg-primary flex gap-1 items-center px-3 py-1 border-t-2 border-primary-light">
-      {socials.map(({ href, alt, src }) => (
+      {footerItems.map(({ href, alt, src }) => (
         <Link href={href} key={href} target="_blank">
           <Image
             src={src}
