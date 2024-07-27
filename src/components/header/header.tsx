@@ -8,7 +8,7 @@ export const navItems = [
 
 export function Header() {
   return (
-    <header className="flex justify-between items-center px-16 h-16 bg-primary drop-shadow-lg">
+    <header className="flex justify-between items-center px-8 md:px-16 h-16 bg-primary drop-shadow-lg">
       <Link href="/">
         <span className="font-bold text-white transition-all hover:text-action">
           &lt;Ali Ataf /&gt;

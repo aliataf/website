@@ -23,7 +23,7 @@ function onPhotoClick(photo: Photo | null): void {
 export function ProjectCard({ project }: ProjectCardProps) {
   return (
     <article className="w-full sm:p-4 mt-4 sm:mt-0 sm:w-6/12 md:w-4/12">
-      <div className="h-80 bg-accent flex-col pt-4 rounded-xl transition-all dark:bg-slate-800 hover:scale-105">
+      <div className="h-[350px] bg-accent flex-col pt-4 rounded-xl transition-all dark:bg-slate-800 hover:scale-105">
         {project.photo && (
           <div className="flex justify-center items-center">
             <div className="w-40 h-40 relative">

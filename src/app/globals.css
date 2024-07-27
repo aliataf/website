@@ -12,4 +12,5 @@
 
 body {
 	@apply text-white;
+	overscroll-behavior: none;
 }
