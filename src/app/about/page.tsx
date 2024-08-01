@@ -12,8 +12,8 @@ export default function About() {
       <div className="flex-1 p-4 sm:pt-32">
         <div>
           <div className="flex items-center mt-6">
-            <div className="pr-6 text-3xl">About</div>
-            <div className="flex-1 border border-yellow-400" style={{ height: '1px' }}></div>
+            <h1 className="pr-6 text-3xl">About</h1>
+            <hr className="flex-1 border border-yellow-400 h-px" />
           </div>
           <div className="mt-6 leading-10 text-gray-300 sm:pr-16 sm:mt-4">
             <p>
@@ -25,6 +25,7 @@ export default function About() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-yellow-400 transition-all duration-700 ease-in-out hover:underline"
+                aria-label="Tradeling website"
               >
                 Tradeling
               </a>

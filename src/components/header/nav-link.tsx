@@ -17,6 +17,7 @@ export default function NavLink({ label, href }: NavLinkProps) {
       href={href}
       className={`${classes.link} ${path.startsWith(href) ? classes.active : ''}`}
       data-label={label}
+      aria-label={label}
     >
       {label}
     </Link>

@@ -28,17 +28,25 @@ export function ProjectCard({ project }: ProjectCardProps) {
           <div className="flex justify-center items-center">
             <div className="w-40 h-40 relative">
               <Image
+                role="button"
+                tabIndex={0}
                 src={project.photo.url}
                 alt={project.photo.alt}
                 className="cursor-zoom-in rounded-xl"
                 onClick={() => onPhotoClick(project.photo)}
+                onKeyDown={(e) => e.key === 'Enter' && onPhotoClick(project.photo)}
                 fill
               />
             </div>
           </div>
         )}
         <div className="mt-4 text-2xl font-medium text-center">
-          <Link href={project.url ? project.url : ''} className="underline cursor-pointer">
+          <Link
+            href={project.url ? project.url : ''}
+            className="underline cursor-pointer"
+            target="_blank"
+            aria-label={`Visit ${project.title} project page`}
+          >
             {project.title}
           </Link>
         </div>

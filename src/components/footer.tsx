@@ -26,15 +26,19 @@ const footerItems = [
 
 export function Footer() {
   return (
-    <footer className="bg-primary flex gap-1 items-center px-3 py-1 border-t-2 border-primary-light">
+    <footer
+      className="bg-primary flex gap-1 items-center px-3 py-1 border-t-2 border-primary-light"
+      aria-label="Footer with social media links"
+    >
       {footerItems.map(({ href, alt, src }) => (
-        <Link href={href} key={href} target="_blank">
+        <Link href={href} key={href} target="_blank" rel="noopener noreferrer" aria-label={alt}>
           <Image
             src={src}
             alt={alt}
             width={35}
             height={35}
             className="cursor-pointer hover:scale-105"
+            priority
           />
         </Link>
       ))}
