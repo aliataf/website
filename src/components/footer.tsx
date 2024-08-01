@@ -38,7 +38,6 @@ export function Footer() {
             width={35}
             height={35}
             className="cursor-pointer hover:scale-105"
-            priority
           />
         </Link>
       ))}
