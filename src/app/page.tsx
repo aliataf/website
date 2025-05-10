@@ -14,7 +14,7 @@ export default async function Home() {
         <h1 className="md:text-2xl font-light">Hey 👋, I am</h1>
         <h2 className="text-2xl md:text-8xl font-extrabold">Ali</h2>
         <h3 className="text-2xl md:text-8xl font-extrabold">Ataf</h3>
-        <p className="md:tracking-[5px] whitespace-nowrap">Senior Frontend Engineer</p>
+        <p className="md:tracking-[5px] whitespace-nowrap">Senior Software Engineer</p>
       </BgCircle>
       <div className="w-72 h-72 md:w-96 md:h-96 relative">
         <Image src={personalImg} alt="Personal photo of Ali Ataf" priority fill />
