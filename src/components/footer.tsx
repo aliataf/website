@@ -7,6 +7,7 @@ import twitterIcon from '@/assets/icons/twitter.svg';
 import mediumIcon from '@/assets/icons/medium.svg';
 import facebookIcon from '@/assets/icons/facebook.svg';
 import whatsappIcon from '@/assets/icons/whatsapp.svg';
+import leetcodeIcon from '@/assets/icons/leetcode.svg';
 import Link from 'next/link';
 
 const footerItems = [
@@ -22,6 +23,7 @@ const footerItems = [
   { href: 'https://aliataf.medium.com', alt: 'Medium', src: mediumIcon },
   { href: 'https://www.facebook.com/aliataf8', alt: 'Facebook', src: facebookIcon },
   { href: 'https://wa.me/+971502357409', alt: 'Whatsapp', src: whatsappIcon },
+  { href: 'https://leetcode.com/u/aliataf', alt: 'Leetcode', src: leetcodeIcon },
 ];
 
 export function Footer() {
