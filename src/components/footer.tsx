@@ -13,13 +13,13 @@ import Link from 'next/link';
 const footerItems = [
   { href: 'mailto:ali@aliataf.com', alt: 'Email', src: emailIcon },
   { href: 'https://www.github.com/aliataf', alt: 'Github', src: githubIcon },
-  { href: 'https://www.linkedin.com/in/ali-ataf', alt: 'Linkedin', src: linkedinIcon },
+  { href: 'https://www.linkedin.com/in/aliataf', alt: 'Linkedin', src: linkedinIcon },
   {
     href: 'https://stackoverflow.com/users/7024690/ali-ataf',
     alt: 'Stackoverflow',
     src: stackoverflowIcon,
   },
-  { href: 'https://twitter.com/AliAttaf1', alt: 'Twitter', src: twitterIcon },
+  { href: 'https://twitter.com/aliataf_x', alt: 'Twitter', src: twitterIcon },
   { href: 'https://aliataf.medium.com', alt: 'Medium', src: mediumIcon },
   { href: 'https://www.facebook.com/aliataf8', alt: 'Facebook', src: facebookIcon },
   { href: 'https://wa.me/+971502357409', alt: 'Whatsapp', src: whatsappIcon },
