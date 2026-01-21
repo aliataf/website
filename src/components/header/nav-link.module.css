@@ -5,7 +5,7 @@
 .link::after {
 	content: '';
 	transition: all 0.3s;
-	@apply bg-action absolute top-0 left-0 py-1 w-full h-0 text-center rounded-b-full cursor-pointer text-white;
+	@apply bg-action absolute top-0 left-0 py-1 w-full h-0 text-center rounded-b-full cursor-pointer text-primary;
 }
 
 .link:not(.active):hover::after {
@@ -14,5 +14,5 @@
 }
 
 .active {
-	@apply bg-action;
+	@apply bg-action text-primary;
 }

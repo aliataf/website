@@ -17,7 +17,13 @@ export default async function Home() {
         <p className="md:tracking-[5px] whitespace-nowrap">Senior Software Engineer</p>
       </BgCircle>
       <div className="w-72 h-72 md:w-96 md:h-96 relative">
-        <Image src={personalImg} alt="Personal photo of Ali Ataf" priority fill />
+        <Image
+          src={personalImg}
+          alt="Personal photo of Ali Ataf"
+          priority
+          fill
+          sizes="(max-width: 768px) 288px, 384px"
+        />
       </div>
     </main>
   );
