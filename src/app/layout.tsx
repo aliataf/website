@@ -4,7 +4,7 @@ import { Analytics } from '@vercel/analytics/react';
 import { Footer, Header, StructuredData } from '@/components';
 import { rootLayoutMetadata } from './constant';
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ['latin'], display: 'swap' });
 
 export const metadata = rootLayoutMetadata;
 
