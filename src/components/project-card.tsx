@@ -1,6 +1,5 @@
 'use client';
 
-import { Photo } from '@prisma/client';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -11,15 +10,6 @@ type ProjectCardProps = {
   readonly project: ProjectWithPhoto;
 };
 
-function onPhotoClick(photo: Photo | null): void {
-  if (photo) {
-    const image: HTMLImageElement = document.createElement('img');
-    image.src = photo.url;
-    const newWindow = window.open('');
-    newWindow?.document.write(image.outerHTML);
-  }
-}
-
 export function ProjectCard({ project }: ProjectCardProps) {
   return (
     <article className="w-full sm:p-4 mt-4 sm:mt-0 sm:w-6/12 md:w-4/12">
@@ -27,16 +17,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
         {project.photo && (
           <div className="flex justify-center items-center">
             <div className="w-40 h-40 relative">
-              <Image
-                role="button"
-                tabIndex={0}
-                src={project.photo.url}
-                alt={project.photo.alt}
-                className="cursor-zoom-in rounded-xl"
-                onClick={() => onPhotoClick(project.photo)}
-                onKeyDown={(e) => e.key === 'Enter' && onPhotoClick(project.photo)}
-                fill
-              />
+              <Image src={project.photo.url} alt={project.photo.alt} className="rounded-xl" fill />
             </div>
           </div>
         )}
